@@ -4,10 +4,20 @@ one:
   name: MyString
   description: MyText
   price: 9.99
+<<<<<<< HEAD
   stock_quantity: 1
+=======
+  stock: 1
+  gender: MyString
+>>>>>>> a9599b5 (Atualização)
 
 two:
   name: MyString
   description: MyText
   price: 9.99
+<<<<<<< HEAD
   stock_quantity: 1
+=======
+  stock: 1
+  gender: MyString
+>>>>>>> a9599b5 (Atualização)

@@ -30,6 +30,15 @@
 /tmp/storage/*
 !/tmp/storage/.keep
 
+<<<<<<< HEAD
+=======
+# Ignore assets.
+/node_modules/
+/app/assets/builds/*
+!/app/assets/builds/.keep
+/public/assets
+
+>>>>>>> a9599b5 (Atualização)
 # Ignore CI service files.
 /.github
 

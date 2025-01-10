@@ -28,5 +28,10 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
+<<<<<<< HEAD
+=======
+/public/assets
+
+>>>>>>> a9599b5 (Atualização)
 # Ignore master key for decrypting credentials and more.
 /config/master.key
