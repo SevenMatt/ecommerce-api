@@ -25,5 +25,10 @@ end
     end
   end
 
+      # Definindo a rota para calcular o frete
+      post '/calculate_shipping', to: 'shipping#calculate'
+end
 
 >>>>>>> a9599b5 (Atualização)
+
+      
