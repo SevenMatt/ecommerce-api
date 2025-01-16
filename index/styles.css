@@ -1,0 +1,60 @@
+/* Reset de margin e padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#user-list{
+    margin-top: 20px;
+}
+
+#user-list h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.1);
+}
+
+#actions{
+    margin-top: 20px;
+    text-align: center;
+}
+
+button{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #45a049;
+}

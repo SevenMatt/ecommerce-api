@@ -29,6 +29,10 @@ end
       post '/calculate_shipping', to: 'shipping#calculate'
 end
 
+      namespace :api do 
+        resources :users, only: [:index]
+      end
+
 >>>>>>> a9599b5 (Atualização)
 
       
