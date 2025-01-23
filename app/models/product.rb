@@ -1,6 +1,4 @@
 class Product < ApplicationRecord
-<<<<<<< HEAD
-=======
     has_many :order_items
     has_many :reviews
 
@@ -17,5 +15,9 @@ class Product < ApplicationRecord
         .order('total_sold DESC')
         .limit(limit)
     end
->>>>>>> a9599b5 (Atualização)
+    
+    belongs_to :category
+
+    validates :name. presence: true
+    validates :price, numericality: { greater_than_or_equal_to: 0 }
 end

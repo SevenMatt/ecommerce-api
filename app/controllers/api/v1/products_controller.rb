@@ -1,6 +1,6 @@
 module Api
     module V1
-<<<<<<< HEAD
+
         class Api::V1::ProductsController < ApplicationController
         before_action :set_production, only: %i[show update destroy]
 
@@ -103,5 +103,20 @@ end
         render json: { error: 'Acesso Negado'}, status: :forbidden unless current_user&.admin?
     end 
   end
+
+    # GEt /api/v1/products
+    def index
+        @products = Product.all
+
+        # Filtros
+        @products = @producs.where('name LIKE ?', "%#{params[:name]}") if params[:name].present?
+        @products = @producs.where(category_id: params[:category_id]) if params[:category_id].present?
+        @products = @producs.where('price >= ?', params[:min_price]) if params[:min_price].present?
+        @products = @producs.where('price <= ?', params[:max_price]) if params[:max_price].present?
+
+        render json: @products
+    end
+   end
+  end
 end
->>>>>>> a9599b5 (Atualização)
+

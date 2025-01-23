@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
   namespace :api do
     namespace :v1 do
       resources :product
@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 end
 end
 end
-=======
+
     namespace :v1 do
       resources :product do 
         collection do
@@ -33,6 +33,16 @@ end
         resources :users, only: [:index]
       end
 
->>>>>>> a9599b5 (Atualização)
+      namespace :api do
+        namespace :v1 do 
+          resources :favorites, only: [:create, :destroy]
+        end
+
+        namespace :api do
+          namespace :v1 do 
+            resources :products, only: [:index]
+          end
+      end
+
 
       
