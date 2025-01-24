@@ -42,7 +42,24 @@ end
           namespace :v1 do 
             resources :products, only: [:index]
           end
-      end
+
+          namespace :api do
+            namespace :v1 do
+              resources :orders, only: [:show] do
+                member do
+                  post 'confirm'
+                end
+              end
+            end
+          end
+          
+          namespace :api do 
+            namespace :v1 do 
+              post 'payment', to: 'payments#create'
+            end 
+          end
+        end
+
 
 
       

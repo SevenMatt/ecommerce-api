@@ -8,6 +8,10 @@ class Order < ApplicationRecord
   def total_price
     order_items.joins(:product).sum('order_items.quantity * products.price')
   end
+
+  validates :email, presence: true, format: { with> URI::MailTo::EMAIL_REGEXP }
+  validates :customer_name, presence: true
+end
 end
 
   
